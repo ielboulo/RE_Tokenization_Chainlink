@@ -9,11 +9,6 @@ import {LinkTokenInterface} from "@chainlink/contracts/src/v0.8/shared/interface
 import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import {Withdraw} from "./utils/Withdraw.sol";
 
-/**
- * THIS IS AN EXAMPLE CONTRACT THAT USES HARDCODED VALUES FOR CLARITY.
- * THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE.
- * DO NOT USE THIS CODE IN PRODUCTION.
- */
 contract CrossChainBurnAndMintERC1155 is ERC1155Core, IAny2EVMMessageReceiver, ReentrancyGuard, Withdraw {
     enum PayFeesIn {
         Native,
